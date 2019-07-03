@@ -15,9 +15,12 @@ cc._RF.push(module, 'd6ca3TAOm9HDaoTMrD7mxjB', 'Star');
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
 cc.Class({
+    // 继承父类 
     extends: cc.Component,
 
     // 构造函数
+    ctor: function ctor() {},
+
     properties: {
         // 星星与主角之间的距离
         pickRadius: 0

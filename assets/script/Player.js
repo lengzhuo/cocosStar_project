@@ -96,7 +96,7 @@ cc.Class({
 
     },
 
-    update: function (dt) {
+    update(dt) {
         // 根据当前加速度方向每帧更新速度
         if (this.accLeft) {
             this.xSpeed -= this.accel * dt;
@@ -111,6 +111,4 @@ cc.Class({
         // 根据当前速度更新主角位置
         this.node.x += this.xSpeed * dt;
     }
-
-    // update (dt) {},
 });
