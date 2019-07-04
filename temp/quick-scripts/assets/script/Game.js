@@ -69,11 +69,11 @@ cc.Class({
         var newStar = cc.instantiate(this.starPrefab);
         // 将新增的节点添加到Canvas节点下
         this.node.addChild(newStar);
-        // 为星星设置一个随机位置
-        newStar.setPosition(this.getNewStarPosition());
-
         // 在星星实例上挂载game对象的引用
         newStar.getComponent('Star').game = this;
+
+        // 为星星设置一个随机位置
+        newStar.setPosition(this.getNewStarPosition());
 
         // 重置计时器
         this.starDuration = this.minStarDuration + Math.random() * (this.maxStarDuration - this.minStarDuration);
